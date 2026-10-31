@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1a1a1a"><title>Entre na sua conta | Cesar Market</title>
+    <link rel="icon" href="/imagens/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/css/style.css">
+    <script src="/js/api.js" defer></script><script src="/js/script.js" defer></script><script src="/js/conta.js" defer></script>
+  </head>
+  <body data-pagina="login">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div id="icones">
+    </div>
+    <div id="cabecalho">
+    </div>
+    <noscript>
+    <p class="container">
+    Ative o JavaScript para usar sua conta e o mercado.
+    </p>
+    </noscript>
+    <main id="conteudo" class="main-content" tabindex="-1">
+      <div class="container auth-layout">
+        <section class="auth-intro">
+          <p class="eyebrow">
+          Seu mercado. Seu momento.
+          </p>
+          <h1>
+          Boas escolhas<br>começam <span class="accent">aqui.</span>
+          </h1>
+          <p>
+          Sua sacola, sua carteira e tudo o que combina com o seu dia.
+          </p>
+          <a class="text-link" href="/produtos">Explorar o catálogo →</a>
+        </section>
+        <section class="auth-card" aria-labelledby="titulo-login">
+          <p class="eyebrow">
+          Que bom ter você de volta
+          </p>
+          <h2 id="titulo-login">
+          Entrar<span class="accent">.</span>
+          </h2>
+          <form id="login-form" class="stack-form">
+            <p class="form-error" role="alert" tabindex="-1" hidden>
+            </p>
+            <label class="field">
+              <span>Login</span><input name="login" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" minlength="3" maxlength="190" required>
+            </label>
+            <label class="field">
+              <span>Senha</span><input name="password" type="password" autocomplete="current-password" maxlength="72" required>
+            </label>
+            <button class="button button-wide" type="submit">Entrar na minha conta →</button>
+          </form>
+          <p class="auth-foot">
+          Primeira vez aqui? <a href="/cadastro" data-preservar-next>Criar uma conta</a>
+          </p>
+        </section>
+      </div>
+    </main>
+    <div id="rodape">
+    </div>
+  </body>
+</html>

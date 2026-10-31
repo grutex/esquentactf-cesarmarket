@@ -1,0 +1,8 @@
+ALTER TABLE orders
+    MODIFY COLUMN subtotal_cents BIGINT NOT NULL,
+    MODIFY COLUMN discount_cents BIGINT NOT NULL DEFAULT 0,
+    MODIFY COLUMN total_cents BIGINT NOT NULL;
+
+ALTER TABLE order_items
+    MODIFY COLUMN unit_price_cents BIGINT NOT NULL,
+    MODIFY COLUMN subtotal_cents BIGINT NOT NULL;

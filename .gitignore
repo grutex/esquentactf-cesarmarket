@@ -1,0 +1,11 @@
+/.env
+/.env.*
+!/.env.example
+/tests/.artifacts/
+/tests/.env.test
+/.work/
+*.log
+__pycache__/
+*.pyc
+/backup*.sql
+/uploads*.tar.gz

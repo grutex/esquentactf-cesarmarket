@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="description" content="Cesar Market: frutas, padaria e os essenciais para o seu dia a dia.">
+  <title>Checkout | Cesar Market</title>
+  <link rel="icon" type="image/svg+xml" href="/imagens/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/api.js" defer></script>
+  <script src="/js/script.js" defer></script>
+</head>
+<body data-pagina="checkout">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div id="icones"></div>
+  <div id="cabecalho"></div>
+  <noscript><p class="container">Ative o JavaScript para visualizar o catálogo, a carteira e a sacola.</p></noscript>
+  <main id="conteudo" class="main-content" tabindex="-1">
+<div class="container page-top">
+  <nav class="breadcrumb" aria-label="Caminho da página">
+  <a href="/">Início</a>
+    <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-chevron"></use></svg>
+<a href="/carrinho">Sua sacola</a>    <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-chevron"></use></svg>
+<span aria-current="page">Checkout</span></nav>
+  <div class="page-heading"><div><p class="eyebrow">Falta pouco para chegar aí</p><h1>Quase em casa<span class="accent">.</span></h1><p>Dados de exemplo já preenchidos. Edite se quiser e finalize o pedido.</p></div><div class="checkout-progress" aria-label="Etapas do pedido"><span><svg class="icon icon-small" aria-hidden="true" focusable="false"><use href="#icon-check"></use></svg> Sacola</span><i></i><span class="active"><b>2</b> Entrega e pagamento</span><i></i><span><b>3</b> Confirmação</span></div></div>
+  <div class="checkout-layout">
+    <form id="checkout-form" class="checkout-form" action="/checkout" method="post">
+      <fieldset class="form-panel"><legend><span class="step">01</span> Seus dados</legend><div class="field-grid">
+        <!-- Dados fictícios editáveis: o checkout do CTF não exige contato real. -->
+        <label class="field"><span>Nome completo</span><input name="nome" type="text" value="Jogador CTF" maxlength="100" autocomplete="off"></label>
+        <label class="field"><span>E-mail</span><input name="email" type="text" inputmode="email" value="jogador@example.test" maxlength="190" autocomplete="off"></label>
+        <label class="field"><span>Celular</span><input name="telefone" type="tel" value="00000000000" maxlength="30" autocomplete="off"></label>
+        <label class="field"><span>CPF</span><input name="cpf" type="text" value="000.000.000-00" maxlength="20" autocomplete="off"></label>
+      </div></fieldset>
+      <fieldset class="form-panel"><legend><span class="step">02</span> Onde vamos entregar?</legend><div class="field-grid">
+        <label class="field"><span>CEP</span><input name="cep" type="text" value="00000-000" maxlength="40" autocomplete="off"></label>
+        <label class="field"><span>Cidade</span><input name="cidade" type="text" value="Cidade Teste" maxlength="100" autocomplete="off"></label>
+        <label class="field field-wide"><span>Rua / Avenida</span><input name="rua" type="text" value="Rua do CTF" maxlength="140" autocomplete="off"></label>
+        <label class="field"><span>Número</span><input name="numero" type="text" value="42" maxlength="20"></label>
+        <label class="field"><span>Complemento</span><input name="complemento" type="text" value="Laboratório" maxlength="100" autocomplete="off"></label>
+        <label class="field"><span>Bairro</span><input name="bairro" type="text" value="Bairro Teste" maxlength="100" autocomplete="off"></label>
+        <label class="field"><span>Estado</span><input name="estado" type="text" value="Estado Teste" maxlength="40" autocomplete="off"></label>
+      </div><h3>Escolha a entrega</h3><div class="delivery-options"></div></fieldset>
+      <fieldset class="form-panel" id="pagamento"><legend><span class="step">03</span> Como prefere pagar?</legend><div class="payment-options"></div></fieldset>
+      <fieldset class="form-panel"><legend><span class="step">04</span> Alguma observação?</legend><div class="field-grid"><label class="field field-wide"><span>O que precisamos saber para a entrega?</span><textarea name="observacoes" rows="3" placeholder="Ex.: tocar o interfone ou deixar na portaria."></textarea></label></div></fieldset>
+    </form>
+<div id="resumo-pedido"></div>
+  </div>
+</div>
+  </main>
+  <div id="rodape"></div>
+</body>
+</html>

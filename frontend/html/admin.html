@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1a1a1a"><title>Painel administrativo | Cesar Market</title>
+    <link rel="icon" href="/imagens/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/css/style.css">
+    <script src="/js/api.js" defer></script><script src="/js/script.js" defer></script><script src="/js/painel.js" defer></script>
+  </head>
+  <body data-pagina="admin">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div id="icones">
+    </div>
+    <div id="cabecalho">
+    </div>
+    <noscript>
+    <p class="container">
+    Ative o JavaScript para usar sua conta e o mercado.
+    </p>
+    </noscript>
+    <main id="conteudo" class="main-content" tabindex="-1">
+      <div class="container page-top dashboard">
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">
+            Cesar Market · Administração
+            </p>
+            <h1>
+            Visão geral<span class="accent">.</span>
+            </h1>
+            <p>
+            Acompanhe o mercado e cuide das próximas boas escolhas.
+            </p>
+          </div>
+          <a class="button button-secondary" href="/produtos">Ver catálogo ↗</a>
+        </div>
+        <div class="metrics-grid" data-metrics aria-live="polite">
+          <p class="muted">
+          Carregando métricas…
+          </p>
+        </div>
+        <div class="admin-layout">
+          <div>
+            <section class="management-panel" aria-labelledby="titulo-novo-produto">
+              <div class="panel-heading">
+                <div>
+                  <p class="eyebrow">
+                  Boas escolhas no catálogo
+                  </p>
+                  <h2 id="titulo-novo-produto">
+                  Cadastrar novo produto
+                  </h2>
+                </div>
+                <span class="role-badge">Catálogo</span>
+              </div>
+              <form id="produto-form" class="stack-form" enctype="multipart/form-data">
+                <p class="form-error" role="alert" tabindex="-1" hidden>
+                </p>
+                <div class="field-grid">
+                  <label class="field">
+                    <span>Nome do produto</span><input name="name" type="text" minlength="2" maxlength="140" required>
+                  </label>
+                  <label class="field">
+                    <span>Categoria</span><select name="category_id" required><option value="">Selecione</option></select>
+                  </label>
+                  <label class="field">
+                    <span>Unidade / apresentação</span><input name="unit" type="text" placeholder="Ex.: Unidade · 500 g" minlength="2" maxlength="100" required>
+                  </label>
+                  <label class="field">
+                    <span>Preço (R$)</span><input name="price" type="text" inputmode="decimal" placeholder="12,90" pattern="[0-9]+([.,][0-9]{1,2})?" required>
+                  </label>
+                  <label class="field">
+                    <span>Preço anterior (opcional)</span><input name="old_price" inputmode="decimal" placeholder="15,90" pattern="[0-9]+([.,][0-9]{1,2})?">
+                  </label>
+                  <label class="field">
+                    <span>Estoque inicial</span><input name="stock" type="number" min="0" max="100000" step="1" value="100" required>
+                  </label>
+                  <label class="field">
+                    <span>Selo (opcional)</span><input name="tag" maxlength="40" placeholder="Ex.: Novidade">
+                  </label>
+                  <label class="field">
+                    <span>Imagem do acervo</span><select name="image_name"><option value="basket.jpg">Sacola do mercado</option><option value="market.jpg">Mercado</option><option value="avocado.jpg">Abacate</option><option value="banana.jpg">Banana</option><option value="bread.jpg">Pão</option><option value="strawberry.jpg">Morango</option><option value="apple.jpg">Maçã</option><option value="tomato.jpg">Tomate</option><option value="chocolate.jpg">Chocolate</option><option value="eggs.jpg">Ovos</option><option value="milk.jpg">Leite</option><option value="vegetables.jpg">Vegetais</option></select>
+                  </label>
+                  <label class="field field-wide">
+                    <span>Ou enviar uma foto (opcional)</span><input name="image" type="file" accept="image/jpeg,image/png,image/webp"><small class="muted">JPG, PNG ou WebP, até 4 MB. A foto enviada substitui a imagem do acervo.</small>
+                  </label>
+                  <label class="field field-wide">
+                    <span>Descrição</span><textarea name="description" rows="3" minlength="10" maxlength="4000" required placeholder="Conte um pouco sobre o produto."></textarea>
+                  </label>
+                  <label class="field field-wide">
+                    <span>Como conservar (opcional)</span><textarea name="storage" rows="2" maxlength="2000"></textarea>
+                  </label>
+                </div>
+                <div class="form-actions">
+                  <button class="button" type="submit">Publicar no catálogo +</button>
+                  <p class="form-success" role="status" hidden>
+                  </p>
+                </div>
+              </form>
+            </section>
+          </div>
+          <div class="admin-side">
+            <section class="management-panel">
+              <div class="panel-heading">
+                <div>
+                  <p class="eyebrow">
+                  Acesso ao catálogo
+                  </p>
+                  <h2>
+                  Moderadores
+                  </h2>
+                </div>
+                <span class="role-badge">Admin</span>
+              </div>
+              <p class="muted panel-description">
+              Marque para permitir que uma conta cadastre produtos. Desmarque para voltar ao acesso comum.
+              </p>
+              <label class="field">
+                <span>Buscar conta</span><input type="search" data-user-search placeholder="Nome ou login">
+              </label>
+              <p class="form-error" data-role-error role="alert" tabindex="-1" hidden>
+              </p>
+              <div class="table-scroll" data-users>
+                <p>
+                Carregando contas…
+                </p>
+              </div>
+            </section>
+            <section class="management-panel">
+              <div class="panel-heading">
+                <div>
+                  <p class="eyebrow">
+                  Movimento do mercado
+                  </p>
+                  <h2>
+                  Pedidos recentes
+                  </h2>
+                </div>
+              </div>
+              <div data-recent-orders>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="rodape">
+    </div>
+  </body>
+</html>

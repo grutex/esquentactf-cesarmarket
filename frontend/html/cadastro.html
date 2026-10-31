@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1a1a1a"><title>Crie sua conta | Cesar Market</title>
+    <link rel="icon" href="/imagens/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/css/style.css">
+    <script src="/js/api.js" defer></script><script src="/js/script.js" defer></script><script src="/js/conta.js" defer></script>
+  </head>
+  <body data-pagina="cadastro">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div id="icones">
+    </div>
+    <div id="cabecalho">
+    </div>
+    <noscript>
+    <p class="container">
+    Ative o JavaScript para usar sua conta e o mercado.
+    </p>
+    </noscript>
+    <main id="conteudo" class="main-content" tabindex="-1">
+      <div class="container auth-layout">
+        <section class="auth-intro">
+          <p class="eyebrow">
+          Uma rotina cheia de possibilidades
+          </p>
+          <h1>
+          Seu próximo<br><span class="accent">bom começo.</span>
+          </h1>
+          <p>
+          Crie sua conta para montar a sacola, acompanhar pedidos e usar sua carteira virtual.
+          </p>
+        </section>
+        <section class="auth-card" aria-labelledby="titulo-cadastro">
+          <p class="eyebrow">
+          Prazer em conhecer você
+          </p>
+          <h2 id="titulo-cadastro">
+          Criar conta<span class="accent">.</span>
+          </h2>
+          <form id="cadastro-form" class="stack-form">
+            <p class="form-error" role="alert" tabindex="-1" hidden>
+            </p>
+            <label class="field">
+              <span>Seu nome</span><input name="name" type="text" autocomplete="name" minlength="2" maxlength="100" required>
+            </label>
+            <label class="field">
+              <span>Login</span><input name="login" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" minlength="3" maxlength="190" required>
+            </label>
+            <label class="field">
+              <span>Senha</span><input name="password" type="password" autocomplete="new-password" minlength="10" maxlength="72" required>
+            </label>
+            <label class="field">
+              <span>Confirmar senha</span><input name="password_confirmation" type="password" autocomplete="new-password" minlength="10" maxlength="72" required>
+            </label>
+            <small class="muted">Use pelo menos 10 caracteres.</small><button class="button button-wide" type="submit">Criar minha conta →</button>
+          </form>
+          <p class="auth-foot">
+          Já tem uma conta? <a href="/login" data-preservar-next>Entrar</a>
+          </p>
+        </section>
+      </div>
+    </main>
+    <div id="rodape">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+{
+  "site": {
+    "name": "Cesar Market",
+    "brand_name": "Cesar",
+    "brand_suffix": "Market",
+    "copyright_year": 2026,
+    "description": "Cesar Market: frutas, padaria e os essenciais para o seu dia a dia."
+  },
+  "user": {
+    "greeting": "Olá, visitante",
+    "account_label": "Minha conta"
+  },
+  "delivery": {
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  "wallet": {
+    "name": "Carteira Cesar",
+    "balance": "50.00"
+  },
+  "categories": [
+    {
+      "name": "Hortifruti",
+      "image": "avocado.jpg",
+      "description": "Frutas, legumes e boas escolhas.",
+      "slug": "hortifruti"
+    },
+    {
+      "name": "Padaria",
+      "image": "bread.jpg",
+      "description": "Um carinho a mais no café da manhã.",
+      "slug": "padaria"
+    },
+    {
+      "name": "Mercearia",
+      "image": "eggs.jpg",
+      "description": "Os essenciais que não podem faltar.",
+      "slug": "mercearia"
+    },
+    {
+      "name": "Laticínios",
+      "image": "milk.jpg",
+      "description": "Para acompanhar os seus momentos.",
+      "slug": "laticinios"
+    },
+    {
+      "name": "Doces",
+      "image": "chocolate.jpg",
+      "description": "Uma pausa para adoçar o dia.",
+      "slug": "doces"
+    },
+    {
+      "name": "Naturais",
+      "image": "vegetables.jpg",
+      "description": "Mais leveza, mais sabor, mais você.",
+      "slug": "naturais"
+    }
+  ],
+  "products": [
+    {
+      "slug": "abacate",
+      "name": "Abacate fresco",
+      "image": "avocado.jpg",
+      "category": "Hortifruti",
+      "unit": "1 unidade · aprox. 500 g",
+      "price": "8.99",
+      "old": "10.99",
+      "tag": "-18%",
+      "sku": "HF-004",
+      "description": "Cremoso, versátil e cheio de possibilidades. Vai bem na salada, na torrada ou naquele guacamole para dividir. Selecionado com cuidado para chegar fresquinho à sua mesa.",
+      "storage": "Conserve em local fresco e arejado. Depois de aberto, mantenha refrigerado e consuma o quanto antes.",
+      "category_slug": "hortifruti",
+      "thumbnail_alt": "Miniatura de Abacate fresco"
+    },
+    {
+      "slug": "banana",
+      "name": "Banana-prata",
+      "image": "banana.jpg",
+      "category": "Hortifruti",
+      "unit": "1 kg · venda por peso",
+      "price": "6.99",
+      "old": "8.49",
+      "tag": "-18%",
+      "sku": "HF-001",
+      "description": "Uma escolha prática para todos os momentos do dia. No café da manhã, no lanche ou na sua receita favorita, a banana-prata leva sabor e simplicidade à rotina.",
+      "storage": "Mantenha em local fresco, seco e protegido do sol. Evite refrigerar antes de atingir o ponto de maturação desejado.",
+      "category_slug": "hortifruti",
+      "thumbnail_alt": "Miniatura de Banana-prata"
+    },
+    {
+      "slug": "pao",
+      "name": "Pão artesanal",
+      "image": "bread.jpg",
+      "category": "Padaria",
+      "unit": "1 unidade · 400 g",
+      "price": "10.89",
+      "old": "",
+      "tag": "Escolha da casa",
+      "sku": "PD-001",
+      "description": "Casca dourada e miolo macio para deixar a mesa ainda mais convidativa. Uma boa companhia para o café, para um sanduíche caprichado ou para dividir com quem você gosta.",
+      "storage": "Guarde bem fechado em local seco. Para uma casquinha crocante, aqueça por alguns minutos antes de servir.",
+      "category_slug": "padaria",
+      "thumbnail_alt": "Miniatura de Pão artesanal"
+    },
+    {
+      "slug": "morango",
+      "name": "Morango selecionado",
+      "image": "strawberry.jpg",
+      "category": "Hortifruti",
+      "unit": "1 bandeja · 250 g",
+      "price": "12.90",
+      "old": "15.90",
+      "tag": "-19%",
+      "sku": "HF-003",
+      "description": "Cor, frescor e um toque de doçura. Escolhidos para acompanhar iogurtes, sobremesas e os pequenos intervalos do seu dia.",
+      "storage": "Mantenha refrigerado e lave apenas na hora de consumir. Produto delicado: evite empilhar ou pressionar.",
+      "category_slug": "hortifruti",
+      "thumbnail_alt": "Miniatura de Morango selecionado"
+    },
+    {
+      "slug": "maca",
+      "name": "Maçã vermelha",
+      "image": "apple.jpg",
+      "category": "Hortifruti",
+      "unit": "1 kg · venda por peso",
+      "price": "11.90",
+      "old": "",
+      "tag": "",
+      "sku": "HF-002",
+      "description": "Crocante e naturalmente doce. Uma fruta que cabe no lanche, na lancheira e nas receitas que deixam a casa com cheiro de aconchego.",
+      "storage": "Guarde em local fresco ou refrigerado. Lave em água corrente antes do consumo.",
+      "category_slug": "hortifruti",
+      "thumbnail_alt": "Miniatura de Maçã vermelha"
+    },
+    {
+      "slug": "tomate",
+      "name": "Tomate fresco",
+      "image": "tomato.jpg",
+      "category": "Hortifruti",
+      "unit": "1 kg · venda por peso",
+      "price": "7.49",
+      "old": "9.99",
+      "tag": "-25%",
+      "sku": "HF-005",
+      "description": "Do molho caseiro à salada de todo dia, um ingrediente que faz a diferença. Tomates selecionados para trazer cor e sabor à sua cozinha.",
+      "storage": "Mantenha em local arejado. Refrigere os tomates maduros e lave somente antes de usar.",
+      "category_slug": "hortifruti",
+      "thumbnail_alt": "Miniatura de Tomate fresco"
+    },
+    {
+      "slug": "chocolate",
+      "name": "Chocolate intenso",
+      "image": "chocolate.jpg",
+      "category": "Doces",
+      "unit": "1 porção · 100 g",
+      "price": "9.90",
+      "old": "",
+      "tag": "",
+      "sku": "DC-001",
+      "description": "Uma pausa com mais sabor. Chocolate com intensidade na medida certa para acompanhar o café ou dar o toque final à sua sobremesa.",
+      "storage": "Conserve em local fresco e seco, longe de calor e de luz direta. Consulte a embalagem para ingredientes e alergênicos.",
+      "category_slug": "doces",
+      "thumbnail_alt": "Miniatura de Chocolate intenso"
+    },
+    {
+      "slug": "ovos",
+      "name": "Ovos selecionados",
+      "image": "eggs.jpg",
+      "category": "Mercearia",
+      "unit": "1 embalagem · 12 unidades",
+      "price": "14.90",
+      "old": "",
+      "tag": "Essencial",
+      "sku": "MC-001",
+      "description": "Um ingrediente, muitas possibilidades. Para o café da manhã, o almoço rápido ou aquela receita de família que sempre dá certo.",
+      "storage": "Guarde conforme as orientações da embalagem. Não utilize ovos com casca quebrada e cozinhe adequadamente.",
+      "category_slug": "mercearia",
+      "thumbnail_alt": "Miniatura de Ovos selecionados"
+    },
+    {
+      "slug": "leite",
+      "name": "Leite integral",
+      "image": "milk.jpg",
+      "category": "Laticínios",
+      "unit": "1 unidade · 1 litro",
+      "price": "5.49",
+      "old": "",
+      "tag": "",
+      "sku": "LT-001",
+      "description": "Para o café, a vitamina e as receitas do dia a dia. Um clássico da despensa para acompanhar o que você mais gosta.",
+      "storage": "Siga as orientações da embalagem. Depois de aberto, mantenha refrigerado e respeite o prazo de consumo indicado.",
+      "category_slug": "laticinios",
+      "thumbnail_alt": "Miniatura de Leite integral"
+    },
+    {
+      "slug": "salada",
+      "name": "Mix de salada fresca",
+      "image": "vegetables.jpg",
+      "category": "Naturais",
+      "unit": "1 porção · 300 g",
+      "price": "13.90",
+      "old": "",
+      "tag": "Leve e fresco",
+      "sku": "NT-001",
+      "description": "Mais cor no prato e praticidade na rotina. Uma combinação de folhas e vegetais para você completar do seu jeito.",
+      "storage": "Mantenha refrigerado. Confira as orientações da embalagem e higienize conforme necessário antes de consumir.",
+      "category_slug": "naturais",
+      "thumbnail_alt": "Miniatura de Mix de salada fresca"
+    }
+  ],
+  "cart": {
+    "lines": [
+      {
+        "product_slug": "abacate",
+        "quantity": 1,
+        "subtotal": "8.99"
+      },
+      {
+        "product_slug": "banana",
+        "quantity": 1,
+        "subtotal": "6.99"
+      },
+      {
+        "product_slug": "pao",
+        "quantity": 1,
+        "subtotal": "10.89"
+      }
+    ],
+    "count": 3,
+    "subtotal": "26.87",
+    "delivery_fee": "7.90",
+    "total": "34.77"
+  },
+  "featured_product_slugs": [
+    "abacate",
+    "banana",
+    "pao",
+    "morango"
+  ],
+  "cart_recommendation_slugs": [
+    "morango",
+    "maca",
+    "tomate",
+    "chocolate"
+  ],
+  "checkout": {
+    "default_payment": "carteira",
+    "payment_methods": [
+      {
+        "id": "pix",
+        "icon": "pix",
+        "label": "Pix",
+        "description": "Temporariamente indisponível: em manutenção.",
+        "badge": "Em manutenção"
+      },
+      {
+        "id": "cartao",
+        "icon": "card",
+        "label": "Cartão de crédito",
+        "description": "Temporariamente indisponível: em manutenção.",
+        "badge": "Em manutenção"
+      },
+      {
+        "id": "carteira",
+        "icon": "wallet",
+        "label": "Carteira Cesar",
+        "description": "",
+        "badge": "Usar saldo"
+      }
+    ],
+    "delivery_options": [
+      {
+        "id": "padrao",
+        "label": "Entrega padrão",
+        "description": "Hoje, entre 14h e 18h",
+        "fee": "7.90"
+      },
+      {
+        "id": "agendada",
+        "label": "Entrega agendada",
+        "description": "Amanhã, entre 9h e 12h",
+        "fee": "7.90"
+      }
+    ],
+    "default_delivery": "padrao",
+    "states": [
+      "São Paulo",
+      "Rio de Janeiro",
+      "Minas Gerais",
+      "Paraná",
+      "Santa Catarina",
+      "Rio Grande do Sul",
+      "Bahia",
+      "Pernambuco",
+      "Ceará",
+      "Distrito Federal",
+      "Espírito Santo",
+      "Goiás",
+      "Mato Grosso",
+      "Mato Grosso do Sul",
+      "Amazonas",
+      "Pará",
+      "Acre",
+      "Alagoas",
+      "Amapá",
+      "Maranhão",
+      "Paraíba",
+      "Piauí",
+      "Rio Grande do Norte",
+      "Rondônia",
+      "Roraima",
+      "Sergipe",
+      "Tocantins"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="description" content="Cesar Market: frutas, padaria e os essenciais para o seu dia a dia.">
+  <title>Hortifruti | Cesar Market</title>
+  <link rel="icon" type="image/svg+xml" href="/imagens/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/api.js" defer></script>
+  <script src="/js/script.js" defer></script>
+</head>
+<body data-pagina="hortifruti">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div id="icones"></div>
+  <div id="cabecalho"></div>
+  <noscript><p class="container">Ative o JavaScript para visualizar o catálogo, a carteira e a sacola.</p></noscript>
+  <main id="conteudo" class="main-content" tabindex="-1">
+<div class="container page-top">
+  <nav class="breadcrumb" aria-label="Caminho da página">
+  <a href="/">Início</a>
+    <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-chevron"></use></svg>
+<span aria-current="page">Hortifruti</span></nav>
+  <div class="page-heading"><div><p class="eyebrow">Da natureza para sua casa</p><h1>Frescor que faz<br><span class="accent">parte do seu dia.</span></h1><p>Frutas e legumes selecionados para levar mais cor à sua mesa.</p></div><span class="page-counter">05 produtos nesta seleção</span></div>
+  <div class="catalog-layout">
+<details class="catalog-sidebar" open="">
+  <summary>Filtrar produtos <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-filter"></use></svg></summary>
+  <form action="/produtos" method="get">
+    <div class="sidebar-section"><h2>Categorias</h2><nav class="sidebar-links" aria-label="Categorias de produtos" data-categorias="filtros"></nav></div>
+    <fieldset class="sidebar-section"><legend>Suas preferências</legend><label class="checkbox-label"><input type="checkbox" name="preferencia" value="ofertas"> Em oferta</label><label class="checkbox-label"><input type="checkbox" name="preferencia" value="frescos"> Frescos do dia</label><label class="checkbox-label"><input type="checkbox" name="preferencia" value="naturais"> Naturais</label></fieldset>
+    <div class="sidebar-section"><h2>Faixa de preço</h2><div class="price-inputs"><label><span class="sr-only">Preço mínimo</span><input type="number" min="0" placeholder="De R$" name="preco-min"></label><label><span class="sr-only">Preço máximo</span><input type="number" min="0" placeholder="Até R$" name="preco-max"></label></div><button type="submit" class="button button-secondary button-wide" disabled="">Aplicar filtros</button></div>
+  </form>
+</details>
+    <div>
+<div class="catalog-banner"><div><p class="eyebrow">O melhor da estação</p><h2>É dia de feira. <span class="accent">Aproveite.</span></h2><p>Encha a sacola de frescor e a mesa de possibilidades.</p></div><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-leaf"></use></svg></div>      <div class="catalog-intro"><p>Mostrando <strong>5 produtos</strong></p><label class="sort-control"><span>Ordenar por</span><select name="ordenacao" aria-label="Ordenar produtos" disabled=""><option>Mais relevantes</option><option>Menor preço</option><option>Maior preço</option></select></label></div>
+      <div class="products-grid catalog-products" id="ofertas" data-produtos="hortifruti"></div>
+      <div class="catalog-bottom"><p>Você viu todos os 5 produtos desta seleção.</p><span class="page-number" aria-label="Página 1">1</span></div>
+    </div>
+  </div>
+</div>
+<div id="promocao"></div>
+  </main>
+  <div id="rodape"></div>
+</body>
+</html>

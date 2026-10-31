@@ -1,0 +1,10 @@
+.env
+.env.*
+.git
+.work
+tests
+**/node_modules
+**/__pycache__
+**/*.pyc
+backup*.sql
+uploads*.tar.gz
